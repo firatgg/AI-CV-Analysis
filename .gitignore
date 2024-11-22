@@ -1,0 +1,27 @@
+# Visual Studio ile ilgili dosyalar
+.vs/
+*.user
+*.suo
+*.vscode/
+
+# Build ve yayın dosyaları
+bin/
+obj/
+publish/
+*.exe
+*.dll
+*.pdb
+
+# Log dosyaları
+*.log
+
+# Geriye dönük paket dosyaları
+*.nupkg
+*.snupkg
+
+# MacOS ve Linux sistem dosyaları
+.DS_Store
+Thumbs.db
+
+# Diğer
+.idea/

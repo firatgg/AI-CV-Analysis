@@ -1,0 +1,6 @@
+@AI_CV_Analysis.API_HostAddress = http://localhost:5044
+
+GET {{AI_CV_Analysis.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
