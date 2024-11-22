@@ -9,10 +9,14 @@ namespace AI_CV_Analysis.Data.Entities
     public class Job
     {
         public int Id { get; set; }
-        public required string Title { get; set; }
-        public required string Description { get; set; }
+        public string Title { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
         public int EmployerId { get; set; }
+
+        // Navigation Properties
         public User Employer { get; set; } = null!;
+        public ICollection<Application> Applications { get; set; } = new List<Application>();
     }
+
 
 }

@@ -10,11 +10,13 @@ namespace AI_CV_Analysis.Data.Entities
     {
         public int Id { get; set; }
         public int JobId { get; set; }
-        public Job Job { get; set; } = null!;
         public int ApplicantId { get; set; }
-        public User Applicant { get; set; } = null!;
-        public required string CVFilePath { get; set; }
-        public double MatchScore { get; set; }
+        public string CVFilePath { get; set; } = string.Empty;
+        public float MatchScore { get; set; }
 
+        // Navigation Properties
+        public Job Job { get; set; } = null!;
+        public User Applicant { get; set; } = null!;
     }
+
 }
